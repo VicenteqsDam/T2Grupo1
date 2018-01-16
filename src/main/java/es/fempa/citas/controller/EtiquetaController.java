@@ -1,8 +1,12 @@
 package es.fempa.citas.controller;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import es.fempa.citas.domain.Etiqueta;
 public class EtiquetaController {
 
 	@PostMapping("/crearEtiqueta")
