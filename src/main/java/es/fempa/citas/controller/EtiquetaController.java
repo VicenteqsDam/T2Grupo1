@@ -4,15 +4,9 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-<<<<<<< Updated upstream
-import org.springframework.web.bind.annotation.RestController;
-
-import es.fempa.citas.domain.Etiqueta;
-=======
 
 import es.fempa.citas.domain.Etiqueta;
 
->>>>>>> Stashed changes
 public class EtiquetaController {
 
 	@PostMapping("/crearEtiqueta")

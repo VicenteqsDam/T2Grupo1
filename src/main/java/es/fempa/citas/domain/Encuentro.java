@@ -1,10 +1,14 @@
 package es.fempa.citas.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
 
@@ -30,6 +34,10 @@ public class Encuentro {
 	@ManyToOne
 	@PrimaryKeyJoinColumn
 	private Usuario idUsuarioSolicitado;
+
+	@ManyToMany
+	@JoinTable(name = "ListDescrip", joinColumns = @JoinColumn(name = "idDescripcion", referencedColumnName = "idDescripcion"))
+	private List<Descripcion> listadoDescripciones;
 
 	private boolean aceptado;
 	private Integer valoracion;

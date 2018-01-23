@@ -1,7 +1,7 @@
 package es.fempa.citas.domain;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,12 +9,14 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Amigo {
+public class Solicitud {
 
-	@ManyToMany
-	private Usuario idAmigo;
+	@OneToMany
+	private Long idSolicitante;
 
-	@ManyToMany
-	private Usuario idUsuario;
+	@OneToMany
+	private Long idSolicitado;
+
 	private Boolean pendiente;
+
 }
