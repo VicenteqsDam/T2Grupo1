@@ -1,11 +1,8 @@
 package es.fempa.citas.domain;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -19,6 +16,4 @@ public class Sexo {
 	private Integer idSexo;
 	private String nombre;
 
-	@OneToMany(mappedBy = "sexo")
-	private List<Usuario> list;
 }
