@@ -68,12 +68,12 @@ public class Usuario {
 	private BuscaBebedorFumador buscaFumadorBebedor;
 
 	/*
-	 * @ManyToOne
+	 * @ManyToMany
 	 * 
 	 * @JoinTable(name = "ListIdiomas", joinColumns = @JoinColumn(name = "idIdioma",
 	 * referencedColumnName = "idIdioma")) private List<Idioma> listadoIdiomas;
 	 * 
-	 * @ManyToOne
+	 * @ManyToMany
 	 * 
 	 * @JoinTable(name = "ListInteres", joinColumns = @JoinColumn(name =
 	 * "idInteres", referencedColumnName = "idInteres")) private List<Interes>
