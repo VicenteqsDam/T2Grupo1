@@ -7,6 +7,6 @@ import es.fempa.citas.domain.Etiqueta;
 
 public interface EtiquetaRepository extends JpaRepository<Etiqueta, Long> {
 
-	@Query("select e from Etiqueta e where e.idEtiqueta = ?1")
+	@Query("select b from Bebedor b")
 	Etiqueta findByIdEtiqueta(Integer idEtiqueta);
 }
