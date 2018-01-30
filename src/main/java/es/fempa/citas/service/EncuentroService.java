@@ -11,9 +11,9 @@ import es.fempa.citas.repository.EncuentroRepository;
 @Service
 public class EncuentroService {
 	@Autowired
-	public EncuentroRepository EncuentroRepository;
+	public EncuentroRepository encuentroRepository;
 
 	public List<Encuentro> findById(Integer id) {
-		return this.EncuentroRepository.findById(id);
+		return this.encuentroRepository.findById(id);
 	}
 }

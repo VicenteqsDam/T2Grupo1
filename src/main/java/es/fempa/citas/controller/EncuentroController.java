@@ -13,10 +13,10 @@ import es.fempa.citas.service.EncuentroService;
 @RestController
 public class EncuentroController {
 	@Autowired
-	private EncuentroService EncuentroService;
+	private EncuentroService encuentroService;
 	
 	@GetMapping("/listadoEncuentros/{id}")
 	public List<Encuentro> findById(@PathVariable Integer id) {
-		return this.EncuentroService.findById(id);
+		return this.encuentroService.findById(id);
 	}
 }

@@ -25,11 +25,11 @@ public class Encuentro {
 
 	@ManyToOne
 	@PrimaryKeyJoinColumn
-	private Usuario UsuarioSolicitante;
+	private Usuario usuarioSolicitante;
 
 	@ManyToOne
 	@PrimaryKeyJoinColumn
-	private Usuario UsuarioSolicitado;
+	private Usuario usuarioSolicitado;
 
 	/*
 	 * @OneToMany
