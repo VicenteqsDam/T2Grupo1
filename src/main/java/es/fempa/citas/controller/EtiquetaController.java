@@ -26,8 +26,7 @@ public class EtiquetaController {
 
 	@GetMapping("/listadoEtiquetas")
 	public List<Etiqueta> listadoEtiquetas() {
-
-		return null;
+		return this.etiquetaService.listadoEtiquetas();
 	}
 
 	@GetMapping("/findByIdEtiqueta/{idEtiqueta}")
