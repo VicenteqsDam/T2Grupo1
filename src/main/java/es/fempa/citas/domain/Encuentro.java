@@ -29,11 +29,11 @@ public class Encuentro {
 
 	@ManyToOne
 	@PrimaryKeyJoinColumn
-	private Usuario idUsuarioSolicitante;
+	private Usuario UsuarioSolicitante;
 
 	@ManyToOne
 	@PrimaryKeyJoinColumn
-	private Usuario idUsuarioSolicitado;
+	private Usuario UsuarioSolicitado;
 
 	@ManyToMany
 	@JoinTable(name = "ListDescrip", joinColumns = @JoinColumn(name = "idDescripcion", referencedColumnName = "idDescripcion"))

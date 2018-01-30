@@ -1,12 +1,9 @@
 package es.fempa.citas.domain;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.PrimaryKeyJoinColumn;
 
 import lombok.Getter;
@@ -22,10 +19,8 @@ public class Ciudad {
 
 	@ManyToOne
 	@PrimaryKeyJoinColumn
-	private Pais idPais;
+	private Pais Pais;
 
 	private String nombre;
 
-	@OneToMany(mappedBy = "ciudad")
-	private List<Usuario> list;
 }

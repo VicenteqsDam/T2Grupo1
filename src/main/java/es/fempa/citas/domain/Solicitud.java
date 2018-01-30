@@ -14,6 +14,6 @@ public class Solicitud {
 
 	private Long idSolicitado;
 
-	private Boolean pendiente;
+	private boolean pendiente;
 
 }

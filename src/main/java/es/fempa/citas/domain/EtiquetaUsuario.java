@@ -14,13 +14,13 @@ public class EtiquetaUsuario {
 
 	@ManyToMany
 	@PrimaryKeyJoinColumn
-	private Usuario idUsuarioQuePone;
+	private Usuario UsuarioQuePone;
 
 	@ManyToMany
-	private Etiqueta idEtiqueta;
+	private Etiqueta Etiqueta;
 
 	@ManyToMany
 	@PrimaryKeyJoinColumn
-	private Usuario idUsuarioPuesto;
+	private Usuario UsuarioPuesto;
 
 }
