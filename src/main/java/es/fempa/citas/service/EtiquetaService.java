@@ -1,5 +1,7 @@
 package es.fempa.citas.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,4 +19,9 @@ public class EtiquetaService {
 		return this.etiquetaRepository.findByIdEtiqueta(idEtiqueta);
 
 	}
+
+	public List<Etiqueta> listadoEtiquetas() {
+		return this.etiquetaRepository.findAll();
+	}
+
 }
