@@ -18,7 +18,7 @@ public class Etiqueta {
 
 	private String nombre;
 
-	private Usuario idUsuario;
+	private Usuario usuario;
 
 	private String foto;
 
