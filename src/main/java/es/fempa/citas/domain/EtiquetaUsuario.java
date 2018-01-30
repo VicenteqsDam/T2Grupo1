@@ -1,8 +1,8 @@
 package es.fempa.citas.domain;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,15 +12,13 @@ import lombok.Setter;
 @Setter
 public class EtiquetaUsuario {
 
-	@ManyToMany
-	@PrimaryKeyJoinColumn
-	private Usuario UsuarioQuePone;
+	/*
+	 * @EmbeddedId private UsuarioEtiquetaPk id;
+	 */
+	@Id
+	private Integer id;
 
-	@ManyToMany
+	@OneToOne
 	private Etiqueta Etiqueta;
-
-	@ManyToMany
-	@PrimaryKeyJoinColumn
-	private Usuario UsuarioPuesto;
 
 }
