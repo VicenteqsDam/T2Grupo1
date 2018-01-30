@@ -21,4 +21,5 @@ public class EtiquetaController {
 
 		return null;
 	}
+
 }
