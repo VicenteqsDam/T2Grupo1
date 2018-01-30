@@ -13,6 +13,8 @@ public class EtiquetaService {
 	public EtiquetaRepository etiquetaRepository;
 
 	public Etiqueta findByIdEtiqueta(Integer idEtiqueta) {
+
 		return this.etiquetaRepository.findByIdEtiqueta(idEtiqueta);
+
 	}
 }
