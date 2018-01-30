@@ -5,9 +5,9 @@ import javax.persistence.ManyToMany;
 public class Bloqueado {
 
 	@ManyToMany
-	private Usuario idUsuarioBloqueado;
+	private Usuario UsuarioBloqueado;
 
 	@ManyToMany
-	private Usuario idUsuario;
+	private Usuario Usuario;
 
 }

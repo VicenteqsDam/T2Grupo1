@@ -21,11 +21,11 @@ public class Mensaje {
 
 	@ManyToOne
 	@PrimaryKeyJoinColumn
-	private Usuario idUsuarioRecibe;
+	private Usuario UsuarioRecibe;
 
 	@ManyToOne
 	@PrimaryKeyJoinColumn
-	private Usuario idUsuarioManda;
+	private Usuario UsuarioManda;
 
 	private String mensaje;
 
