@@ -9,6 +9,6 @@ import es.fempa.citas.domain.Encuentro;
 
 public interface EncuentroRepository extends JpaRepository<Encuentro, Integer>{
 	
-	@Query("select e from Encuentro e where e.id_encuentro=?")
-	public List<Encuentro> findById(Integer id_encuentro);
+	@Query("select e from Encuentro e where e.idEncuentro=?")
+	public Encuentro findById(Integer idEncuentro);
 }

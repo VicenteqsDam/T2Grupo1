@@ -14,7 +14,7 @@ public class EncuentroService {
 	@Autowired
 	public EncuentroRepository encuentroRepository;
 
-	public List<Encuentro> findById(Integer id_encuentro) {
-		return this.encuentroRepository.findById(id_encuentro);
+	public Encuentro findById(Integer idEncuentro) {
+		return this.encuentroRepository.findById(idEncuentro);
 	}
 }
