@@ -15,8 +15,8 @@ public class EncuentroController {
 	@Autowired
 	private EncuentroService encuentroService;
 	
-	@GetMapping("/listadoEncuentros/{id}")
-	public List<Encuentro> findById(@PathVariable Integer id) {
-		return this.encuentroService.findById(id);
+	@GetMapping("/listadoEncuentros/{id_encuentro}")
+	public List<Encuentro> findById(@PathVariable Integer id_encuentro) {
+		return this.encuentroService.findById(id_encuentro);
 	}
 }
