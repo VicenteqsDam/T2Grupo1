@@ -10,6 +10,7 @@ import es.fempa.citas.repository.EncuentroRepository;
 
 @Service
 public class EncuentroService {
+
 	@Autowired
 	public EncuentroRepository encuentroRepository;
 

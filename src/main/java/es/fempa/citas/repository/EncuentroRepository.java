@@ -7,8 +7,8 @@ import org.springframework.data.jpa.repository.Query;
 
 import es.fempa.citas.domain.Encuentro;
 
-public interface EncuentroRepository extends JpaRepository<Encuentro, Integer>{
-	
-	@Query("select e from Encuentro e where e.usuarioSolicitante=?")
+public interface EncuentroRepository extends JpaRepository<Encuentro, Integer> {
+
+	@Query("select e from encuentro e where e.usuario_solicitante_id_usuario=?")
 	public List<Encuentro> findById(Integer id);
 }
