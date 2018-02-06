@@ -2,6 +2,7 @@ package es.fempa.citas.domain;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -36,7 +37,8 @@ public class Usuario {
 	private Sexo sexo;
 
 	/*
-	 * @OneToMany(mappedBy = "idSolicitante") private List<Solicitud> listsoliPend;
+	 * @OneToMany(mappedBy = "idSolicitante") private List<Solicitud>
+	 * listsoliPend;
 	 * 
 	 * @OneToMany(mappedBy = "idUsuario") private List<Amistad> listAmistades;
 	 */
@@ -70,8 +72,9 @@ public class Usuario {
 	/*
 	 * @ManyToMany
 	 * 
-	 * @JoinTable(name = "ListIdiomas", joinColumns = @JoinColumn(name = "idIdioma",
-	 * referencedColumnName = "idIdioma")) private List<Idioma> listadoIdiomas;
+	 * @JoinTable(name = "ListIdiomas", joinColumns = @JoinColumn(name =
+	 * "idIdioma", referencedColumnName = "idIdioma")) private List<Idioma>
+	 * listadoIdiomas;
 	 * 
 	 * @ManyToMany
 	 * 
@@ -86,6 +89,7 @@ public class Usuario {
 	@ManyToOne
 	private Orientacion orientacion;
 
-	private String correoElectronico;
+	@Column(name = "correo_electronico")
+	private String username;
 
 }
