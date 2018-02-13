@@ -7,9 +7,9 @@ import javax.persistence.Embeddable;
 import lombok.Getter;
 import lombok.Setter;
 
-@Embeddable
 @Getter
 @Setter
+@Embeddable
 public class AmistadPk implements Serializable {
 
 	private Usuario usuario;

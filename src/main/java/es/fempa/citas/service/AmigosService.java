@@ -14,8 +14,8 @@ public class AmigosService {
 	@Autowired
 	public AmigosRepository amigosRepository;
 
-	public List<Usuario> listadoUsuarios(Integer id) {
-		return this.amigosRepository.findAll();
+	public List<Usuario> listadoAmigos(Usuario u) {
+		return this.amigosRepository.findAmigos(u);
 	}
 
 	public void deleteAmigo(Integer id) {
