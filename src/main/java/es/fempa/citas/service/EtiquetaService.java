@@ -24,4 +24,8 @@ public class EtiquetaService {
 		return this.etiquetaRepository.findAll();
 	}
 
+	public void crearEtiqueta(Etiqueta e) {
+		this.etiquetaRepository.save(e);
+	}
+
 }
