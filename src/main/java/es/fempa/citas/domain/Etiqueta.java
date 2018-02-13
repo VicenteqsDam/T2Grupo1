@@ -5,8 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,7 +20,7 @@ public class Etiqueta {
 	private String nombre;
 
 	@ManyToOne
-	@JsonIgnore
+	// @JsonIgnore
 	private Usuario usuario;
 
 	private String foto;

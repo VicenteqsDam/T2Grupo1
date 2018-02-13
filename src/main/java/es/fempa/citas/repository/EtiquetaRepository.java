@@ -10,4 +10,7 @@ public interface EtiquetaRepository extends JpaRepository<Etiqueta, Integer> {
 	@Query("select e from Etiqueta e where e.idEtiqueta = ?1")
 	Etiqueta findByIdEtiqueta(Integer idEtiqueta);
 
+	@Query("select u.nombre from Etiqueta e join e.usuario u where e.idEtiqueta = ?")
+	Etiqueta findUsersByEtiqueta(Integer idEtiqueta);
+
 }

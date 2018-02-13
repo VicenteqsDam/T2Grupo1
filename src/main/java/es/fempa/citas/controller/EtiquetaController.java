@@ -35,4 +35,9 @@ public class EtiquetaController {
 		return this.etiquetaService.findByIdEtiqueta(idEtiqueta);
 	}
 
+	@GetMapping("/findUsersByEtiqueta/{idEtiqueta}")
+	public Etiqueta findUsersByEtiqueta(@PathVariable Integer idEtiqueta) {
+		return this.etiquetaService.findByIdEtiqueta(idEtiqueta);
+	}
+
 }
