@@ -17,7 +17,6 @@ import es.fempa.citas.domain.Pais;
 import es.fempa.citas.domain.Sexo;
 import es.fempa.citas.repository.DatoBasicoBebedorRepository;
 import es.fempa.citas.repository.DatoBasicoBuscaBebedorFumadorRepository;
-import es.fempa.citas.repository.DatoBasicoCiudadRepository;
 import es.fempa.citas.repository.DatoBasicoColorOjosRepository;
 import es.fempa.citas.repository.DatoBasicoColorPeloRepository;
 import es.fempa.citas.repository.DatoBasicoFumadorRepository;
@@ -39,8 +38,6 @@ public class DatoBasicoUsuarioService {
 	public DatoBasicoOrientacionRepository datoBasicoOrientacionRepository;
 	@Autowired
 	public DatoBasicoBuscaBebedorFumadorRepository datoBasicoBuscaBebedorFumadorRepository;
-	@Autowired
-	public DatoBasicoCiudadRepository datoBasicoCiudadRepository;
 	@Autowired
 	public DatoBasicoInteresRepository datoBasicoInteresRepository;
 	@Autowired
@@ -71,9 +68,10 @@ public class DatoBasicoUsuarioService {
 		return this.datoBasicoBuscaBebedorFumadorRepository.findAll();
 	}
 
-	public List<Ciudad> listadoCiudad() {
+	public List<Ciudad> findCiudadesById(Integer id) {
 
-		return this.datoBasicoCiudadRepository.findAll();
+		return this.datoBasicoPaisRepository.findCiudadesById(id);
+
 	}
 
 	public List<Interes> listadoIntereses() {
