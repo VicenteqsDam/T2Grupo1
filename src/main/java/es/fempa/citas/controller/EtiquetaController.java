@@ -19,13 +19,10 @@ public class EtiquetaController {
 	private EtiquetaService etiquetaService;
 
 	@PostMapping("/crearEtiqueta")
-	public Etiqueta crearEtiqueta() {
 	public void crearEtiqueta(@RequestBody Etiqueta e) {
 
 		this.etiquetaService.crearEtiqueta(e);
 
-		Etiqueta etiqueta = new Etiqueta();
-		return etiqueta;
 	}
 
 	@GetMapping("/listadoEtiquetas")
