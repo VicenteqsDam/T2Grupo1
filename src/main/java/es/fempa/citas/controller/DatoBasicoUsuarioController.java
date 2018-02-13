@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import es.fempa.citas.domain.Bebedor;
@@ -54,10 +55,10 @@ public class DatoBasicoUsuarioController {
 		return this.datoBasicoUsuarioService.listadoBuscaBebedorFumador();
 	}
 
-	@GetMapping("/listadoCiudad")
-	public List<Ciudad> listadoCiudad() {
+	@GetMapping("/listadoCiudadesPorPais/{id}")
+	public List<Ciudad> listadoCiudad(@PathVariable Integer id) {
 
-		return this.datoBasicoUsuarioService.listadoCiudad();
+		return this.datoBasicoUsuarioService.findCiudadesById(id);
 	}
 
 	@GetMapping("/listadoIntereses")

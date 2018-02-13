@@ -4,7 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -18,8 +17,7 @@ public class Ciudad {
 	private Integer idCiudad;
 
 	@ManyToOne
-	@PrimaryKeyJoinColumn
-	private Pais Pais;
+	private Pais pais;
 
 	private String nombre;
 
