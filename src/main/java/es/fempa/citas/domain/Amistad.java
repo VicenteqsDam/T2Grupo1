@@ -13,8 +13,5 @@ public class Amistad {
 
 	@EmbeddedId
 	private AmistadPk id;
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 }
