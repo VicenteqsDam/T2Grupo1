@@ -16,9 +16,9 @@ public class AmigosController {
 	@Autowired
 	private AmigosService amigosService;
 
-	@GetMapping("/listadoUsuarios")
-	public List<Usuario> listadoUsuarios(Integer id) {
-		return this.amigosService.listadoUsuarios(id);
+	@GetMapping("/listadoAmigos")
+	public List<Usuario> listadoAmigos(Usuario u) {
+		return this.amigosService.listadoAmigos(u);
 	}
 
 	@DeleteMapping

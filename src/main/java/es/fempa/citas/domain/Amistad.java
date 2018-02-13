@@ -1,7 +1,7 @@
 package es.fempa.citas.domain;
 
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -11,9 +11,6 @@ import lombok.Setter;
 @Setter
 public class Amistad {
 
-	// @EmbeddedId
-	// private AmistadPk id;
-
-	@Id
-	private Integer id;
+	@EmbeddedId
+	private AmistadPk id;
 }
