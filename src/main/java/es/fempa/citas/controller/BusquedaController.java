@@ -16,7 +16,7 @@ public class BusquedaController {
 	private BusquedaService busquedaService;
 
 	@GetMapping("/busqueda")
-	public List<Usuario> busquedaGeneral() {
+	public List<Usuario> busquedaGenerales() {
 
 		return this.busquedaService.busquedaGeneral();
 	}
