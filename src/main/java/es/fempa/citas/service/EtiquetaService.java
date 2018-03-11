@@ -28,4 +28,9 @@ public class EtiquetaService {
 		this.etiquetaRepository.save(e);
 	}
 
+	public void editarEiqueta(Etiqueta e) {
+		System.out.println(e.getNombre() + ", " + e.getFoto()  + ", " +  e.getUsuario() + ", " +  e.getIdEtiqueta()); 
+		this.etiquetaRepository.editarEtiqueta(e.getNombre(), e.getFoto(), e.getUsuario(), e.getIdEtiqueta());
+//		this.etiquetaRepository.save(e);
+	}
 }

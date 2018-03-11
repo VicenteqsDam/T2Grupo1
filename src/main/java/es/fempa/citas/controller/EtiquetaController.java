@@ -39,5 +39,10 @@ public class EtiquetaController {
 	public Etiqueta findUsersByEtiqueta(@PathVariable Integer idEtiqueta) {
 		return this.etiquetaService.findByIdEtiqueta(idEtiqueta);
 	}
+	
+	@PostMapping("/editarEtiqueta")
+	public void editarEiqueta(@RequestBody Etiqueta e) {
+		this.etiquetaService.editarEiqueta(e);
+	}
 
 }
